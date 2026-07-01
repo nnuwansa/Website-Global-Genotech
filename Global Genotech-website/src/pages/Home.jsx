@@ -117,7 +117,7 @@ export default function Home() {
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow>Client stories</Eyebrow>
             <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-[color:var(--color-navy)] sm:text-4xl">
-              Teams that shipped faster with us
+              Teams  that trust us with their systems
             </h2>
           </div>
           <div className="mt-14">

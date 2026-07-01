@@ -1,36 +1,37 @@
-import { Code2, Cloud, BrainCircuit, Users2, Smartphone, ShieldCheck } from "lucide-react";
+import { Code2, Cloud, BrainCircuit, Users2, Smartphone, ShieldCheck,Database, ShoppingCart } from "lucide-react";
 
 export const SERVICES = [
   {
     icon: Code2,
-    title: "Product engineering",
+    title: "Software Development",
     desc: "Full-stack web and backend systems built on architecture that survives contact with real users.",
   },
   {
-    icon: Smartphone,
-    title: "Mobile apps",
-    desc: "Native and cross-platform apps for iOS and Android, from prototype to App Store launch.",
+    icon: Database,
+    title: "MIS & ERP systems",
+    desc: "Custom management information systems that centralize your data and give leadership real-time visibility.",
   },
-  {
-    icon: Cloud,
-    title: "Cloud & DevOps",
-    desc: "AWS, Azure and GCP infrastructure, CI/CD pipelines, and observability that keeps you shipping fast.",
+  
+   {
+    icon: ShoppingCart,
+    title: "POS systems",
+    desc: "Point-of-sale platforms for retail and hospitality, covering checkout, inventory and sales reporting in one place.",
   },
-  {
-    icon: BrainCircuit,
-    title: "AI & data",
-    desc: "LLM integrations, data pipelines and applied ML that turn your data into a working feature.",
-  },
-  {
-    icon: Users2,
-    title: "Team augmentation",
-    desc: "Dedicated engineers embedded in your team, your tools, your timezone, and your standups.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "QA & security",
-    desc: "Automated testing, penetration testing and code audits so launches don't turn into incidents.",
-  },
+  // {
+  //   icon: Cloud,
+  //   title: "Cloud & DevOps",
+  //   desc: "AWS, Azure and GCP infrastructure, CI/CD pipelines, and observability that keeps you shipping fast.",
+  // },
+  // {
+  //   icon: Users2,
+  //   title: "Team augmentation",
+  //   desc: "Dedicated engineers embedded in your team, your tools, your timezone, and your standups.",
+  // },
+  // {
+  //   icon: ShieldCheck,
+  //   title: "QA & security",
+  //   desc: "Automated testing, penetration testing and code audits so launches don't turn into incidents.",
+  // },
 ];
 
 export default function ServicesGrid({ compact = false }) {

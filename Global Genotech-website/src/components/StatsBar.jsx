@@ -1,8 +1,8 @@
 const STATS = [
-  { value: "12+", label: "years building software" },
+  { value: "2+", label: "years building software" },
   { value: "96%", label: "client retention" },
-  { value: "80+", label: "engineers on the bench" },
-  { value: "150+", label: "products shipped" },
+  // { value: "80+", label: "engineers on the bench" },
+  { value: "10+", label: "products" },
 ];
 
 export default function StatsBar({ className = "" }) {

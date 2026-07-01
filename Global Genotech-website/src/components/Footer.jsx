@@ -14,10 +14,10 @@ const COLUMNS = [
   {
     title: "Services",
     links: [
-      { to: "/services", label: "Product engineering" },
-      { to: "/services", label: "Cloud & DevOps" },
-      { to: "/services", label: "AI & data" },
-      { to: "/services", label: "Team augmentation" },
+      { to: "/services", label: "Software Development" },
+      { to: "/services", label: "MIS & ERP systems" },
+      { to: "/services", label: "POS systems" },
+      // { to: "/services", label: "Team augmentation" },
     ],
   },
 ];
