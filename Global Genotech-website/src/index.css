@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Brand palette ---- */
+  --color-navy: #0a1834;
+  --color-navy-light: #12224a;
+  --color-ink: #0f1b33;
+  --color-blue-50: #eef4ff;
+  --color-blue-100: #dbe7ff;
+  --color-blue-500: #155eef;
+  --color-blue-600: #1148c4;
+  --color-blue-700: #0d3897;
+  --color-yellow-300: #ffe17d;
+  --color-yellow-400: #ffd23f;
+  --color-yellow-500: #ffc800;
+  --color-yellow-600: #e0ac00;
+  --color-slate-500: #5b6478;
+  --color-slate-600: #414a5e;
+  --color-cloud: #f5f8ff;
+
+  /* ---- Type ---- */
+  --font-display: "Sora", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-yellow-400);
+  color: var(--color-navy);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-yellow-500);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Signature: node-grid ambient background */
+.node-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.node-dot {
+  position: absolute;
+  border-radius: 999px;
+  background: var(--color-yellow-500);
+  box-shadow: 0 0 18px 2px rgba(255, 200, 0, 0.55);
+  animation: float-node 7s ease-in-out infinite;
+}
+
+@keyframes float-node {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.9; }
+  50% { transform: translateY(-14px) scale(1.15); opacity: 1; }
+}
+
+@keyframes drift {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(12px, -10px); }
+  100% { transform: translate(0, 0); }
+}
+
+.animate-drift {
+  animation: drift 9s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.section-clip-yellow {
+  clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 94%);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(95deg, #1148c4 0%, #155eef 45%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
