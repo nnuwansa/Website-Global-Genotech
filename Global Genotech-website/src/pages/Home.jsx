@@ -324,7 +324,7 @@ export default function Home() {
         <div className="relative mx-auto max-w-4xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--color-yellow-500)]">
             <Sparkles size={13} />
-            Software studio · Colombo &amp; remote
+            Software company· Colombo &amp; remote
           </span>
 
           <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-[64px]">
